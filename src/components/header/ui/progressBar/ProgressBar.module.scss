@@ -1,0 +1,35 @@
+.progressBar {
+    width: 100%;
+
+    .progressFill {
+    }
+}
+.progressRange {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    &::-webkit-slider-runnable-track {
+        height: 12px;
+        background-color: #ccc;
+        border-radius: 6px;
+    }
+    & ::-moz-range-track {
+        height: 12px;
+        background-color: #ccc;
+        border-radius: 6px;
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: 0;
+        appearance: 0;
+        height: 15px;
+        width: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        border-radius: 2px solid #f50;
+        box-shadow: -407px 0 0 40px #f50;
+    }
+}

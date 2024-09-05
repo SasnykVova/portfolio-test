@@ -1,0 +1,45 @@
+.greetSection {
+    padding: 136px 0 0 0;
+    max-width: 1419px;
+    display: flex;
+    gap: 139px;
+
+    .greetingBlock {
+        flex: 1 1 718px;
+
+        .greet {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .name {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            color: #FF6300;
+        }
+        .positionF {
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 150px;
+        }
+        .positionS {
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 150px;
+            padding-left: 237px;
+        }
+        .text {
+            font-size: 21px;
+            margin-bottom: 29px;
+        }
+    }
+    .photoBlock {
+        .socialNetwork {
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 26px;
+        }
+    }
+}

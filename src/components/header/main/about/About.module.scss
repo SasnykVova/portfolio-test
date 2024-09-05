@@ -1,0 +1,25 @@
+.aboutBlock {
+    padding: 86px 0 0 0;
+    display: flex;
+    gap: 93px;
+
+    .titleSkillsBlock {
+        flex: 1 1 756px;
+
+        .titleWrapper {
+            .title {
+                font-weight: 600;
+                font-size: 65px;
+                line-height: 97.5px;
+            }
+            .text {
+                font-size: 21px;
+                line-height: 31.5px;
+                letter-spacing: 3%;
+            }
+        }
+        .skillsBlock {
+            width: 100%;
+        }
+    }
+}

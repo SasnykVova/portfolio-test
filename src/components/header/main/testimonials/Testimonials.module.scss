@@ -1,0 +1,60 @@
+.testimonialsBlock {
+    padding-top: 120px;
+
+    .testimonialsListBlock {
+        width: 1087px;
+        padding: 55px 77px;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+            .textBlock {
+                width: 716px;
+                .text {
+                    position: relative;
+                    font-size: 21px;
+                    line-height: 31.5px;
+                    color: #424242;
+                    flex: 1 1 100%;
+                    padding-bottom: 30px;
+                    &::before {
+                        content: '"';
+                        position: absolute;
+                        top: -12px;
+                        left: -12px;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 48px;
+                        letter-spacing: 2%;
+                        color: #FD6F00;
+                    }
+                    &::after {
+                        content: '"';
+                        position: absolute;
+                        bottom: 0;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 48px;
+                        letter-spacing: 2%;
+                        color: #FD6F00;
+                    }
+                }
+                .name {
+                    color: #000000;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+                .position {
+                    font-size: 19px;
+                    line-height: 28.5px;
+                    letter-spacing: 2%;
+                }
+            }
+        }
+    }
+}

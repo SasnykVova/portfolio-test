@@ -1,0 +1,36 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: all 0.3s ease 0s;
+  }
+  &::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    transition: all 0.3s ease 0s;
+  }
+  .midlleLine {
+    display: flex;
+    width: 40px;
+    height: 1px;
+    background: #000;
+    z-index: 15;
+  }
+}

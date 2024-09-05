@@ -1,0 +1,24 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 5px 15px;
+    color: #000000;
+    background-color: #F3F3F3;
+    height: 54px;
+    width: 192px;
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    line-height: 31.5px;
+    letter-spacing: 3%;
+    text-wrap: nowrap;
+}
+
+@media (max-width:768px) {
+    .button {
+        width: 120px;
+        height: 40px;
+    }
+}

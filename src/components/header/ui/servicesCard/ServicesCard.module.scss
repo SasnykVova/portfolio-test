@@ -1,0 +1,20 @@
+.servicesCard {
+    margin: 70px 0 0 0;
+    width: 330px;
+    background-color: #F3F3F3;
+    border-radius: 14px;
+    padding: 57px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .cardIcon {}
+    .cardTitle {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .cardDescription {
+        font-size: 19px;
+        line-height: 28.5px;
+    }
+}

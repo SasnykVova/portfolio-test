@@ -1,0 +1,21 @@
+.menu {
+    padding: 0 26px 0 121px;
+
+    .menuList {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        font-size: 21px;
+        line-height: 31.5px;
+        letter-spacing: 3%;
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width:1300px) {
+    .menu {
+        padding: 0 20px 0 80px;
+    }
+}
