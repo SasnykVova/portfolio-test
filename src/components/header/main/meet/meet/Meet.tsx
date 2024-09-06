@@ -1,11 +1,12 @@
 import React from 'react';
 import style from './Meet.module.scss';
-import { ReactComponent as Photo } from '../../../../../assets/main/image-1.svg';
+import photo from '../../../../../assets/main/image-1.svg';
 import { ReactComponent as Facebook } from '.././../../../../assets/main/Facebook - Negative.svg';
 import { ReactComponent as Twitter } from '.././../../../../assets/main/Twitter - Negative.svg';
 import { ReactComponent as Instagram } from '.././../../../../assets/main/Instagram - Negative.svg';
 import { ReactComponent as LinkedIn } from '.././../../../../assets/main/LinkedIn - Negative.svg';
 import Button from '../../../ui/button/Button';
+
 
 
 const Meet: React.FC = () => {
@@ -22,7 +23,7 @@ const Meet: React.FC = () => {
             <Button text='Hire Me' width='188px' height='52px'/>
             </div>
             <div className={style.photoBlock}>
-                <Photo width={'562px'} height={'633px'}/>
+                <div className={style.imgWrapper}><img className={style.img} src={photo} alt='person'/></div>
                 <div className={style.socialNetwork}>
                     <Facebook/>
                     <Twitter/>

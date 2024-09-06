@@ -47,7 +47,12 @@ table {
 }
 @media (max-width:768px) {
   .app {
-    padding: 0 20px
+    padding: 30px 30px 30px 30px;
+  }
+}
+@media (max-width:480px) {
+  .app {
+    padding: 15px 15px 15px 15px;
   }
 }
 

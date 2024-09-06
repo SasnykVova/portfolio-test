@@ -1,13 +1,19 @@
 .titleBlock {
     margin: 0 auto;
-    width: 932px;
+    max-width: 932px;
     text-align: center;
     .title {
         font-weight: 600;
-        font-size: 65px;
+        font-size: 4.06rem;
         line-height: 97.5px;
+        @media (max-width:768px) {
+            font-size: 3rem;
+        }
     }
     .subTitle {
-        font-size: 21px;
+        font-size: 1.31rem;
+        @media (max-width:768px) {
+            font-size: 1.1rem;
+        }
     }
 }

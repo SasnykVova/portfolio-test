@@ -37,17 +37,17 @@ const Project: React.FC = () => {
         </div>
         <div className={style.filterProject}>
             <div className={style.projectCard}>
-                <img src={projectFirst} alt="WebSite iamge"/>
+                <div className={style.imgWrapper}><img className={style.img} src={projectFirst} alt="WebSite iamge"/></div>
                 <div className={style.title}>UI UX</div>
                 <div className={style.description}>AirCalling Landing Page Design </div>
             </div>
             <div className={style.projectCard}>
-                <img src={projectFirst} alt="WebSite iamge"/>
+                <div className={style.imgWrapper}><img className={style.img} src={projectFirst} alt="WebSite iamge"/></div>
                 <div className={style.title}>UI UX</div>
                 <div className={style.description}>AirCalling Landing Page Design </div>
             </div>
             <div className={style.projectCard}>
-                <img src={projectFirst} alt="WebSite iamge"/>
+                <div className={style.imgWrapper}><img className={style.img} src={projectFirst} alt="WebSite iamge"/></div>
                 <div className={style.title}>UI UX</div>
                 <div className={style.description}>AirCalling Landing Page Design </div>
             </div>

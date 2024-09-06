@@ -6,14 +6,37 @@
         display: flex;
         justify-content: center;
         gap: 11px;
+        overflow-x: auto;
+        @media (max-width:768px) {
+            min-width: 100%;
+        }
     }
     .filterProject {
+        max-width: 100%;
         padding: 76px 0 0 0;
         display: flex;
+        gap: 15px;
         justify-content: space-between;
+        overflow-x: auto;
+
+        @media (max-width:768px) {
+            min-width: 100%;
+        }
+    
 
         .projectCard {
-            width: 449px;
+            flex: 0 1 33%;
+            @media (max-width:1200px) {
+                flex: 0 1 45%;
+            }
+            @media (max-width:768px) {
+                min-width: 300px;
+            }
+
+            .imgWrapper img {
+                width: 80%;
+                height: 100%;
+            }
             .title {
                 padding-top: 20px;
                 color:#FF6300;

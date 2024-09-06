@@ -4,6 +4,10 @@
     .servicesCardBlock {
         display: flex;
         gap: 31px;
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
     }
 
 }

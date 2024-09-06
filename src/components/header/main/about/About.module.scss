@@ -3,19 +3,37 @@
     display: flex;
     gap: 93px;
 
+    @media (max-width:768px) {
+        flex-direction: column-reverse;
+    }
+
+    .imgWraapper img {
+        width: 100%;
+        height: 100%;
+    }
+
     .titleSkillsBlock {
         flex: 1 1 756px;
+        @media (max-width:768px) {
+            flex: 1 1 100%;
+        }
 
         .titleWrapper {
             .title {
                 font-weight: 600;
-                font-size: 65px;
+                font-size: 4.06rem;
                 line-height: 97.5px;
+                @media (max-width:768px) {
+                    font-size: 3rem;
+                }
             }
             .text {
-                font-size: 21px;
+                font-size: 1.31rem;
                 line-height: 31.5px;
                 letter-spacing: 3%;
+                @media (max-width:768px) {
+                    font-size: 1.1rem;
+                }
             }
         }
         .skillsBlock {

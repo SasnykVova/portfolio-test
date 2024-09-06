@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Button.module.scss";
-import { OneTest } from './../../../../../node_modules/tsconfig-paths/lib/__tests__/data/match-path-data.d';
 
 
 interface ButtonProps {

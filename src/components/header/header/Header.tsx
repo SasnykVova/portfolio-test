@@ -6,7 +6,6 @@ import Button from "../ui/button/Button";
 import Burger from "../ui/burger/Burger";
 
 const Header: React.FC = () => {
-  
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -15,9 +14,11 @@ const Header: React.FC = () => {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, [windowWidth]);
+  }, []);
 
-  const isMobile = windowWidth < 1200;
+  const isSmallDesctop = windowWidth < 1200;
+  const isMobile = windowWidth < 768;
+  const smallmobile = windowWidth < 480;
 
   return (
     <>
@@ -25,10 +26,18 @@ const Header: React.FC = () => {
         <Logo className={style.logo} />
         <div
           className={style.menuBtnWrapper}
-          style={{ flexDirection: isMobile ? "row-reverse" : "row" }}
+          style={{ flexDirection: isSmallDesctop ? "row-reverse" : "row" }}
         >
-          {isMobile ? <Burger /> : <Menu />}
-          <Button text="Download CV" height="52px" width="192px" />
+          {isSmallDesctop ? <Burger /> : <Menu />}
+          {smallmobile ? (
+            ""
+          ) : (
+            <Button
+              text="Download CV"
+              height="52px"
+              width={isMobile ? "150px" : "192px"}
+            />
+          )}
         </div>
       </header>
     </>
