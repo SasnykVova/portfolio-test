@@ -9,6 +9,7 @@
         overflow-x: auto;
         @media (max-width:768px) {
             min-width: 100%;
+            justify-content: left;
         }
     }
     .filterProject {

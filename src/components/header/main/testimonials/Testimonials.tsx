@@ -13,7 +13,7 @@ const Testimonials: React.FC = () => {
         />
         <div className={style.testimonialsListBlock}>
             <div className={style.item}>
-                <img src={avatar} alt="avatar"/>
+                <div className={style.imgWrapper}><img className={style.img} src={avatar} alt="avatar"/></div>
                 <div className={style.textBlock}>
                     <p className={style.text}>Lorem ipsum dolor sit amet consectetur. Id purus placerat scelerisque ullamcorper habitasse egestas.
                         Nunc gravida egestas suspendisse volutpat suscipit suspendisse faucibus amet convallis.</p>
