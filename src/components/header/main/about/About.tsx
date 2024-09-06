@@ -3,6 +3,19 @@ import photo from "../../../../assets/main/image-2.svg";
 import style from "./About.module.scss";
 import ProgressBar from "../../ui/progressBar/ProgressBar";
 
+interface SkillData {
+  id: number
+  title: string
+  value: number
+}
+
+const skillsData: SkillData[] = [
+  {id: 1, title: 'UX', value: 95},
+  {id: 1, title: 'Website Design', value: 87},
+  {id: 1, title: 'App Design ', value: 92},
+  {id: 1, title: 'Graphic Design ', value: 84},
+]
+
 const About: React.FC = () => {
   return (
     <>
@@ -20,8 +33,7 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className={style.skillsBlock}>
-            <h5>UX</h5>
-            <ProgressBar />
+            {skillsData.map(s => <ProgressBar key={s.id} title={s.title} defaultValue={s.value}/>)}
           </div>
         </div>
       </section>
