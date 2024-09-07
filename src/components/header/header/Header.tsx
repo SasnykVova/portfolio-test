@@ -4,6 +4,7 @@ import style from "./Header.module.scss";
 import Menu from "./menu/Menu";
 import Button from "../ui/button/Button";
 import Burger from "../ui/burger/Burger";
+import Wrapper from "../ui/wrapper/Wrapper";
 
 const Header: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,24 +23,26 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={style.header}>
-        <Logo className={style.logo} />
-        <div
-          className={style.menuBtnWrapper}
-          style={{ flexDirection: isSmallDesctop ? "row-reverse" : "row" }}
-        >
-          {isSmallDesctop ? <Burger /> : <Menu />}
-          {smallmobile ? (
-            ""
-          ) : (
-            <Button
-              text="Download CV"
-              height="52px"
-              width={isMobile ? "150px" : "192px"}
-            />
-          )}
-        </div>
-      </header>
+      <Wrapper>
+        <header className={style.header}>
+          <Logo className={style.logo} />
+          <div
+            className={style.menuBtnWrapper}
+            style={{ flexDirection: isSmallDesctop ? "row-reverse" : "row" }}
+          >
+            {isSmallDesctop ? <Burger /> : <Menu />}
+            {smallmobile ? (
+              ""
+            ) : (
+              <Button
+                text="Download CV"
+                height="52px"
+                width={isMobile ? "150px" : "192px"}
+              />
+            )}
+          </div>
+        </header>
+      </Wrapper>
     </>
   );
 };

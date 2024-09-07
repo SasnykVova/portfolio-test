@@ -6,16 +6,18 @@ import { ReactComponent as IconWeb } from "./../../../../assets/main/services/ic
 import { ReactComponent as IconDesign } from "./../../../../assets/main/services/icon-design.svg";
 import { ReactComponent as IconGrafic } from "./../../../../assets/main/services/icon-grafic.svg";
 import ServicesCard from "../../ui/servicesCard/ServicesCard";
+import Wrapper from "../../ui/wrapper/Wrapper";
 
 const Services: React.FC = () => {
   return (
     <>
-      <section className={style.servicesBlock}>
-        <Title
-          title="Services"
-          subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."
-        />
-        <div className={style.servicesCardBlock}>
+      <Wrapper>
+        <section className={style.servicesBlock}>
+          <Title
+            title="Services"
+            subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."
+          />
+          <div className={style.servicesCardBlock}>
             <ServicesCard
               title="UI/UX"
               description="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh"
@@ -36,8 +38,9 @@ const Services: React.FC = () => {
               description="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh"
               children={<IconGrafic />}
             />
-        </div>
-      </section>
+          </div>
+        </section>
+      </Wrapper>
     </>
   );
 };

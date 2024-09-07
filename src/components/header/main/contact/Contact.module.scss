@@ -1,0 +1,79 @@
+.contactBlock {
+    padding: 138px 0 142px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    .inputBtnWrapper {
+        display: flex;
+        height: 75px;
+        width: 874px;
+        gap: 25px;
+
+        @media (max-width:992px) {
+            width: 100%;
+        }
+        @media (max-width:768px) {
+            height: 50px;
+            gap: 15px;
+        }
+        @media (max-width:480px) {
+            height: 40px;
+            gap: 7px;
+        }
+
+        .input {
+            width: 575px;
+            border: 1px solid #AFAFAF;
+            border-radius: 14px;
+            font-size: 1.31rem;
+            line-height: 2rem;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 26px;  
+            @media (max-width:992px) {
+                max-width: 575px;
+            }
+            @media (max-width:768px) {
+                font-size: 1rem;
+                line-height: 1.6rem;
+                padding: 0 15px;
+            }
+            @media (max-width:480px) {
+                font-size: 0.8rem;
+                line-height: 1.4rem;
+                padding: 0 10px;
+            }
+        }
+        .button {
+            height: 100%;
+            padding: 20px 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-wrap: nowrap;
+            background-color: #FD6F00;
+            border: none;
+            border-radius: 14px;
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2.25rem;
+            @media (max-width:992px) {
+                max-block-size: 222px;
+            }
+            @media (max-width:768px) {
+                font-size: 1.2rem;
+                line-height: 1.9rem;
+                padding: 15px 27px;
+            }
+            @media (max-width:480px) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

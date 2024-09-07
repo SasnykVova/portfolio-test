@@ -6,6 +6,8 @@ import About from './components/header/main/about/About';
 import Services from './components/header/main/services/Services';
 import Project from './components/header/main/project/Project';
 import Testimonials from './components/header/main/testimonials/Testimonials';
+import Contact from './components/header/main/contact/Contact';
+import Footer from './components/header/main/footer/Footer';
 
 
 const App: React.FC = () => {
@@ -18,6 +20,8 @@ const App: React.FC = () => {
         <Services/>
         <Project/>
         <Testimonials/>
+        <Contact/>
+        <Footer/>
       </div>
     </>
   )
