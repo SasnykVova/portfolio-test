@@ -7,12 +7,16 @@ import { ReactComponent as IconDesign } from "./../../../../assets/main/services
 import { ReactComponent as IconGrafic } from "./../../../../assets/main/services/icon-grafic.svg";
 import ServicesCard from "../../ui/servicesCard/ServicesCard";
 import Wrapper from "../../ui/wrapper/Wrapper";
+import { useTheme } from "../../../../context/ThemeContext";
 
 const Services: React.FC = () => {
+
+  const { theme } = useTheme();
+
   return (
     <>
       <Wrapper>
-        <section className={style.servicesBlock}>
+        <section className={`${style.servicesBlock} ${style[theme]}`}>
           <Title
             title="Services"
             subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."

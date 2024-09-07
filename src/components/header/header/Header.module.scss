@@ -10,6 +10,10 @@
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
+
+        .modeWrapper {
+            padding: 10px 0 0 25px;
+        }
     }
 }
 

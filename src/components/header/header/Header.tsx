@@ -5,8 +5,13 @@ import Menu from "./menu/Menu";
 import Button from "../ui/button/Button";
 import Burger from "../ui/burger/Burger";
 import Wrapper from "../ui/wrapper/Wrapper";
+import { useTheme } from "../../../context/ThemeContext";
+import { ReactComponent as Light } from '../../../assets/header/light.svg';
+import { ReactComponent as Dark } from './../../../assets/header/dark.svg';
 
 const Header: React.FC = () => {
+
+  const { theme, setTheme } = useTheme();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -40,6 +45,15 @@ const Header: React.FC = () => {
                 width={isMobile ? "150px" : "192px"}
               />
             )}
+            {isSmallDesctop ? 
+            '' 
+            : 
+            <div className={style.modeWrapper}>{theme === 'light' ? 
+              <Dark onClick={() => setTheme('dark')} width={'30px'} height={'30px'}/> 
+              : 
+              <Light onClick={() => setTheme('light')} width={'30px'} height={'30px'} style={{fill: theme === 'dark' ? '#fff' : ''}}/>
+              }</div>
+            }
           </div>
         </header>
       </Wrapper>

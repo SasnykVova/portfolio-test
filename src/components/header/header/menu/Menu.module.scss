@@ -1,6 +1,5 @@
 .menu {
-    padding: 0 26px 0 121px;
-
+    padding-right: 25px;
     .menuList {
         height: 100%;
         display: flex;
@@ -16,6 +15,5 @@
 
 @media (max-width:1300px) {
     .menu {
-        padding: 0 20px 0 80px;
     }
 }

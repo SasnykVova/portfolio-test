@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Meet.module.scss";
 import photo from "../../../../../assets/main/image-1.svg";
 import { ReactComponent as Facebook } from ".././../../../../assets/main/Facebook - Negative.svg";
@@ -8,11 +8,18 @@ import { ReactComponent as LinkedIn } from ".././../../../../assets/main/LinkedI
 import Button from "../../../ui/button/Button";
 import Wrapper from "../../../ui/wrapper/Wrapper";
 
+type Theme = 'light' | 'dark';
+
 const Meet: React.FC = () => {
+
+  // const { theme, toggleTheme } = useTheme();
+
+  const [ theme, setTheheme ] = useState<Theme>('dark');
+
   return (
     <>
       <Wrapper>
-        <section className={style.greetSection}>
+        <section className={`${style.greetSection} ${style[theme]}`}>
           <div className={style.greetingBlock}>
             <div className={style.greet}>Hi I am</div>
             <div className={style.name}>Muhammad Bin Jameel</div>

@@ -5,6 +5,7 @@ import { ReactComponent as Facebook } from '../../../../assets/main/Facebook - N
 import { ReactComponent as Twitter } from '../../../../assets/main/Twitter - Negative.svg';
 import { ReactComponent as Instagram } from '../../../../assets/main/Instagram - Negative.svg';
 import { ReactComponent as LinkedIn } from '../../../../assets/main/LinkedIn - Negative.svg';
+import { useTheme } from '../../../../context/ThemeContext';
 
 
 interface MenuData {
@@ -13,6 +14,8 @@ interface MenuData {
 }
 
 const Footer: React.FC = () => {
+
+    const { theme } = useTheme();
 
     const menuData: MenuData[] = [
         {id: 1, text: 'Home'},
@@ -26,7 +29,7 @@ const Footer: React.FC = () => {
     const menu = menuData.map(({id, text}) => <div className={style.menuItem} key={id}>{text}</div>)
     return (
         <>
-        <footer className={style.footerBlock}>
+        <footer className={`${style.footerBlock} ${style[theme]}`}>
             <div className={style.firstBlock}>
                 <div className={style.logoWrapper}><img src={logo} alt='logo'/></div>
                 <div className={style.footerMenuWrapper}>
