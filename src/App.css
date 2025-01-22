@@ -32,6 +32,9 @@ table {
 }
 /* Обнулення стилів */
 
+html {
+  scroll-behavior: smooth;
+}
 
 .app {
   height: 100%;

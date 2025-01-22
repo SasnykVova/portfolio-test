@@ -52,9 +52,14 @@ const Testimonials: React.FC = () => {
     setActiveTestimonial(id);
     setActiveButton(id);
 
+    window.scrollBy(0, 1);
+  window.scrollBy(0, -1);
+
+
     if (testimonialRefs.current[id]) {
       testimonialRefs.current[id]!.scrollIntoView({
         behavior: "smooth",
+        block: "center",
         inline: "center",
       });
     }
@@ -62,7 +67,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <>
-      <section className={style.testimonialsBlock}>
+      <section id="testimonials" className={style.testimonialsBlock}>
         <Title
           title="Testimonials"
           subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."

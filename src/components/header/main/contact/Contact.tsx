@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <Wrapper>
-        <section className={style.contactBlock}>
+        <section id="contact" className={style.contactBlock}>
           <Title
             title="Lets Design Together"
             subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."

@@ -30,7 +30,7 @@ const Header: React.FC = () => {
     <>
       <Wrapper>
         <header className={style.header}>
-          <Logo className={style.logo} />
+          <Logo className={style.logo} fill='white'/>
           <div
             className={style.menuBtnWrapper}
             style={{ flexDirection: isSmallDesctop ? "row-reverse" : "row" }}

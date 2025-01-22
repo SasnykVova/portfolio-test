@@ -28,7 +28,7 @@ const Project: React.FC = () => {
   return (
     <>
       <Wrapper>
-        <section className={style.projectBlock}>
+        <section id="projects" className={style.projectBlock}>
           <Title
             title="My Projects"
             subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."

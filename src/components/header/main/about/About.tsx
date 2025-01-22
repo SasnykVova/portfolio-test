@@ -21,7 +21,7 @@ const About: React.FC = () => {
   return (
     <>
       <Wrapper>
-        <section className={style.aboutBlock}>
+        <section className={style.aboutBlock} id="about">
           <div className={style.imgWraapper}>
             <img src={photo} alt="person" />
           </div>

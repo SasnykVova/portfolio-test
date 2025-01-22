@@ -16,12 +16,12 @@ const Services: React.FC = () => {
   return (
     <>
       <Wrapper>
-        <section className={`${style.servicesBlock} ${style[theme]}`}>
+        <section id='services' className={`${style.servicesBlock} ${style[theme]}`}>
           <Title
             title="Services"
             subTitle="Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante."
           />
-          <div className={style.servicesCardBlock}>
+          <div className={`${style.servicesCardBlock} ${style[theme]}`}>
             <ServicesCard
               title="UI/UX"
               description="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh"
